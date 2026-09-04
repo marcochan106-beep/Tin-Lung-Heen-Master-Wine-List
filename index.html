@@ -227,7 +227,7 @@ function navR(){
    'Premium Fine Wine Collection',
    'Sommelier Selection'
   ].includes(c.title)
-    ? '<span style="color:#e6c477;margin-right:6px;">★</span>' + esc(c.title)
+    ? '<span style="display:inline-block;width:18px;color:#e6c477;">★</span>' + esc(c.title)
     : esc(c.title)
 }</span>${has?`<span class="chev">${open?'−':'+'}</span>`:''}</button>${has?`<div class="subnav ${open?'show':''}">${kids.map(g=>`<button class="navsub ${c.id===current&&activeGroup===g.name?'active':''}" data-cat="${c.id}" data-group="${esc(g.name)}">${esc(g.name)}</button>`).join('')}</div>`:''}</div>`
  }).join('');
